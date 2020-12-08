@@ -128,11 +128,11 @@ class _SimulatorModRTSGMLC:
             assert diff, "Column: " + column_name + " diverges."
 
 
-class TestSimulatorModRTSGMLCNetwork(_SimulatorModRTSGMLC, unittest.TestCase):
-    def _set_names(self):
-        self.simulator_config_filename = 'simulate_with_network_deterministic.txt'
-        self.results_dir_name = 'deterministic_with_network_simulation_output'
-        self.baseline_dir_name = 'deterministic_with_network_simulation_output_baseline'
+# class TestSimulatorModRTSGMLCNetwork(_SimulatorModRTSGMLC, unittest.TestCase):
+#     def _set_names(self):
+#         self.simulator_config_filename = 'simulate_with_network_deterministic.txt'
+#         self.results_dir_name = 'deterministic_with_network_simulation_output'
+#         self.baseline_dir_name = 'deterministic_with_network_simulation_output_baseline'
 
 class TestSimulatorModRTSGMLCCopperSheet(_SimulatorModRTSGMLC, unittest.TestCase):
     def _set_names(self):
